@@ -1,34 +1,69 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+/*
+COLORS:
 
-        <link rel="stylesheet" href="css/icon-font.css">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-        
-        <title>1021| Consultoría de Obra Cívil</title>
-    </head>
-    <body>
-      <header class="header">
-          <div class="logo-box">
-            <img src="img/logo-white.png" alt="logo" class="logo">
-          </div>
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485
 
-          <div class="text-box">
-            <h1 class="heading-primary"> 
-              <span class="heading-primary-main">1021</span>
-              <span class="heading-primary-sub"> Consultoría y Obra Cívil</span>
-            </h1>
-          </div>
+*/
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body{
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color:#777;
+  padding: 30px;
+}
 
+.header{
+  position:relative;
+  height: 95vh;
+  background-image: linear-gradient(to right bottom,rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)) ,url(../img/hero.jpg);
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%)
+}
 
-      </header>
-        
-    </body>
-</html>
+.logo-box {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.logo {
+  height: 35px;
+
+}
+
+.text-box {
+  position: absolute;
+  top:40%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+
+.heading-primary {
+  color:#ffff
+}
+
+.heading-primary-main {
+  display: block;
+  font-size: 60px;
+  font-weight: 400;
+  letter-spacing: 35px;
+}
+
+.heading-primary-sub {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 17.5px;
+}
+
