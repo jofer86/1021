@@ -34,13 +34,15 @@ clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%)
 .logo-box {
 width: 100%;
 position: absolute;
-top: 40px;
-left: 40px;
+top: 180px;
+left: 0;
 }
 
 .logo {
 height: 35px;
-
+transition: all .2s;
+animation: appear 2s ease-out 1.5s;
+animation-fill-mode: backwards;
 }
 
 .text-box {
@@ -120,6 +122,17 @@ animation: moveInright 2s ease-out;
   }
 }
 
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
 .btn:link,
 .btn:visited {
     text-transform: uppercase;
@@ -142,11 +155,6 @@ animation: moveInright 2s ease-out;
 
 }
 
-.btn-white {
-  background-color: #fff;
-  color: #777;
-} 
-
 .btn::after {
   content: "";
   display: inline-block;
@@ -160,17 +168,21 @@ animation: moveInright 2s ease-out;
   transition: all .4s;
 }
 
-.btn-white::after {
-  background-color: #fff;  
-} 
-
 .btn:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
 }
 
+.btn-white {
+  background-color: #fff;
+  color: #777;
+} 
+
+.btn-white::after {
+  background-color: #fff;  
+} 
+
 .btn-animated {
   animation: moveInbottom .5s ease-out .75s;
   animation-fill-mode: backwards;
 }
-
