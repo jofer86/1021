@@ -35,6 +35,7 @@ body{
   position: absolute;
   top: 40px;
   left: 40px;
+  width: 100%;
 }
 
 .logo {
@@ -48,9 +49,37 @@ body{
   left:50%;
   transform: translate(-50%, -50%);
 }
+.dot1 {
+height: 80px;
+width: 80px;
+background-color: #549cf9;
+border-radius: 50%;
+display: inline-block;
+position: relative;
+margin-left: 20px;
+}
+.dot2 {
+  height: 80px;
+  width: 80px;
+  background-color:#f8ad0f;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  margin-left: 20px;
+  }
+  .dot3 {
+    height: 80px;
+    width: 80px;
+    background-color: #5eae48;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    margin-left: 20px;
+    }
 
 .heading-primary {
-  color:#ffff
+  color:#ffff;
+  backface-visibility:  hidden; 
 }
 
 .heading-primary-main {
@@ -59,9 +88,7 @@ body{
   font-weight: 400;
   letter-spacing: 35px;
 
-  animation-name: moveInleft;
-  animation-duration: 2s;
-  animation-timing-function: ease-out;
+  animation: moveInleft 2s ease-out;
   /* animation-iteration-count: 2; */
   
 }
@@ -71,11 +98,7 @@ body{
   font-size: 20px;
   font-weight: 900;
   letter-spacing: 17.5px;
-
-  animation-name: moveInright;
-  animation-duration: 2s;
-  animation-timing-function: ease-out;
-
+  animation: moveInright 2s ease-out;
 }
 
 @keyframes moveInleft {
@@ -85,7 +108,7 @@ body{
   }
 
   80% {
-    transform: translateX(10px);
+    transform: translateX(40px);
 
   }
 
@@ -102,7 +125,7 @@ body{
   }
 
   80% {
-    transform: translateX(10px);
+    transform: translateX(-40px);
 
   }
 
