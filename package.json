@@ -16,9 +16,7 @@
     "url": "https://github.com/jofer86/1021/issues"
   },
   "homepage": "https://github.com/jofer86/1021#readme",
-  "dependencies": {
-    "jquery": "^3.4.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "node-sass": "^4.12.0"
   }
