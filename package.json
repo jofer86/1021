@@ -1,0 +1,25 @@
+{
+  "name": "1021",
+  "version": "1.0.0",
+  "description": "Page for sebas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jofer86/1021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jofer86/1021/issues"
+  },
+  "homepage": "https://github.com/jofer86/1021#readme",
+  "dependencies": {
+    "jquery": "^3.4.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
