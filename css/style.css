@@ -1164,6 +1164,20 @@ body {
     letter-spacing: 1.75rem;
     animation: moveInright 2s ease-out; }
 
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(to right, #55c57a, #106146);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  transition: all .2s; }
+  .heading-secondary:hover {
+    transform: scale(1.2);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+
 @keyframes moveInleft {
   0% {
     opacity: 0;
@@ -1249,7 +1263,7 @@ body {
 .header {
   position: relative;
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(85, 197, 122, 0.8), rgba(40, 180, 133, 0.8));
+  background-image: linear-gradient(to right bottom, rgba(85, 197, 122, 0.8), rgba(16, 97, 70, 0.8));
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%); }
@@ -1272,3 +1286,9 @@ body {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%); }
+
+.section-about {
+  background-color: #ebe5e5;
+  padding: 25rem 0;
+  margin-top: -20vh;
+  clip-path: polygon(0 20vh, 100% 0, 100% 75vh, 0% 100%); }
