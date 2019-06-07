@@ -1295,6 +1295,20 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transform: translateY(0); }
 
+.composition {
+  position: relative; }
+  .composition__photo {
+    width: 55%;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+    position: absolute; }
+    .composition__photo--p2 {
+      left: 23rem;
+      top: 4rem; }
+    .composition__photo--p3 {
+      left: 10rem;
+      top: 11rem; }
+
 .header {
   position: relative;
   height: 95vh;
@@ -1326,4 +1340,4 @@ body {
   background-color: #ebe5e5;
   padding: 25rem 0;
   margin-top: -20vh;
-  clip-path: polygon(0 20vh, 100% 0, 100% 75vh, 0% 100%); }
+  clip-path: polygon(0 20vh, 100% 0, 100% 90vh, 0% 100%); }

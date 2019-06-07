@@ -1,5 +1,5 @@
-@import "bulma-0.7.5/sass/utilities/all.sass";
-@import "bulma-0.7.5/sass/grid/columns.sass";
+@import "vendor/bulma-0.7.5/sass/utilities/all.sass";
+@import "vendor/bulma-0.7.5/sass/grid/columns.sass";
 
 @import "abstracts/functions";
 @import "abstracts/mixins";
@@ -11,7 +11,8 @@
 @import "base/utilities";
 
 @import "components/button";
+@import "components/composition";
 
 @import "layout/header";
 
-@import "pages/home";
+@import "pages/home"; 
