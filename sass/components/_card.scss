@@ -60,16 +60,16 @@
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100% );
 
     &--1 {
-      background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary, $color-secondary-dark), url(../img/nat-5.jpg);
+      background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary, $color-secondary-dark), url(../img/building-1-large.jpg);
       
     }
 
     &--2 {
-      background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary, $color-tertiary-dark), url(../img/nat-4.jpg);
+      background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary, $color-tertiary-dark), url(../img/building-5-large.jpg);
     }
 
     &--3 {
-      background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary, $color-primary-dark), url(../img/nat-3.jpg);
+      background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary, $color-primary-dark), url(../img/building-3-large.jpg);
     }
   }
 
