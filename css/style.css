@@ -108,6 +108,12 @@ body {
 .u-margin-right-def {
   margin-right: 1.5rem; }
 
+.u-margin-top-big {
+  margin-top: 8rem; }
+
+.u-center-text {
+  text-align: center; }
+
 @keyframes spinAround {
   from {
     transform: rotate(0deg); }
@@ -1273,6 +1279,12 @@ body {
   .btn--white::after {
     background-color: #fff; }
 
+.btn--green {
+  background-color: #23990e;
+  color: #fff; }
+  .btn--green::after {
+    background-color: #55c57a; }
+
 .btn--animated {
   animation: moveInbottom 2s ease-out .75s;
   animation-fill-mode: backwards; }
@@ -1338,7 +1350,7 @@ body {
     font-size: 6rem;
     display: inline-block;
     margin-bottom: .5rem;
-    background-image: linear-gradient(to right, #a8cff0, #228adf);
+    background-image: linear-gradient(to right, #ecc455, #997309);
     -webkit-background-clip: text;
     color: transparent; }
   .feature-box:hover {
@@ -1348,9 +1360,10 @@ body {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 50rem; }
+  height: 52rem;
+  left: -2rem; }
   .card__side {
-    height: 50rem;
+    height: 52rem;
     margin: 0 2rem;
     transition: all .8s ease;
     position: absolute;
@@ -1395,13 +1408,49 @@ body {
     top: 12rem;
     right: 2rem;
     text-align: right; }
-  .card__heading--span--1 {
-    background-image: linear-gradient(to right bottom rgba(168, 207, 240, 0.8), rgba(34, 138, 223, 0.8)); }
+  .card__heading-span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    color: #fff; }
+    .card__heading-span--1 {
+      background-image: linear-gradient(to right bottom, rgba(168, 207, 240, 0.89), rgba(34, 138, 223, 0.89)); }
+    .card__heading-span--2 {
+      background-image: linear-gradient(to right bottom, rgba(236, 196, 85, 0.89), rgba(153, 115, 9, 0.89)); }
+    .card__heading-span--3 {
+      background-image: linear-gradient(to right bottom, rgba(85, 197, 122, 0.89), rgba(16, 97, 70, 0.89)); }
+  .card__details {
+    padding: 3rem; }
+    .card__details ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto 0 6rem; }
+    .card__details li {
+      font-size: 1.5rem;
+      padding: 1rem;
+      margin-right: 6rem; }
+  .card__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center; }
+  .card__price-box {
+    text-align: center;
+    margin-bottom: 8rem;
+    color: #fff; }
+  .card__price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase; }
+  .card__price-value {
+    font-size: 6rem;
+    font-weight: 100; }
 
 .header {
   position: relative;
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(85, 197, 122, 0.8), rgba(16, 97, 70, 0.8)), url(../img/nat-1-large.jpg);
+  background-image: linear-gradient(to right bottom, rgba(168, 207, 240, 0.8), rgba(34, 138, 223, 0.8)), url(../img/nat-1-large.jpg);
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%); }
@@ -1426,14 +1475,13 @@ body {
     transform: translate(-50%, -50%); }
 
 .section-about {
-  background-color: #ebe5e5;
   padding: 25rem 0;
   margin-top: -20vh;
   clip-path: polygon(0 20vh, 100% 0, 100% 100%, 0% 100%); }
 
 .section-features {
   padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, rgba(168, 207, 240, 0.8), rgba(95, 176, 244, 0.8), rgba(34, 138, 223, 0.8)), url(../img/nat-1-large.jpg);
+  background-image: linear-gradient(to right bottom, rgba(236, 196, 85, 0.8), rgba(208, 157, 13, 0.8), rgba(153, 115, 9, 0.8)), url(../img/nat-1-large.jpg);
   background-size: cover;
   transform: skewY(-7deg);
   margin-top: -8rem; }
@@ -1442,5 +1490,5 @@ body {
 
 .section-services {
   margin-top: -7.5rem;
-  background-color: #ebe5e5;
-  padding: 25rem 0 50rem 0; }
+  padding: 25rem 0 15rem 0;
+  margin-top: -10rem; }

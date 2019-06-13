@@ -3,11 +3,12 @@
   perspective: 150rem;
   -moz-perspective: 150rem;
   position:relative;
-  height: 50rem;
+  height: 52rem;
+  left: -2rem;
 
   &__side {
 
-    height: 50rem;
+    height: 52rem;
     margin: 0 2rem;
     transition: all .8s ease;
     position: absolute;
@@ -82,11 +83,61 @@
     text-align: right;
   }
 
-  &__heading--span {
-
+  &__heading-span{
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    color: $color-white;
+    
     &--1 {
-      background-image: linear-gradient(to right bottom rgba($color-secondary-light, .8), rgba($color-secondary-dark, .8));
+      background-image: linear-gradient(to right bottom, rgba($color-secondary-light, .89), rgba($color-secondary-dark, .89));
+    }
+    &--2 {
+      background-image: linear-gradient(to right bottom, rgba($color-tertiary-light, .89), rgba($color-tertiary-dark, .89));
+    }
+    &--3 {
+      background-image: linear-gradient(to right bottom, rgba($color-primary-light, .89), rgba($color-primary-dark, .89));
+    }    
+  }
+
+  &__details {
+    padding:3rem;
+
+    ul{
+      list-style: none;
+      width: 80%;
+      margin: 0 auto 0 6rem;
+    }
+    li {      
+      font-size: 1.5rem;
+      padding: 1rem;
+      margin-right: 6rem;
     }
   }
 
+  &__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:90%;
+    text-align: center;
+  }
+  &__price-box{
+    text-align: center;
+    margin-bottom: 8rem;
+    color: $color-white;
+
+  }
+
+  &__price-only{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+
+  }
+
+  &__price-value {
+    font-size: 6rem;
+    font-weight: 100;
+  }
 }
