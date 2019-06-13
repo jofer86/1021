@@ -16,8 +16,7 @@ body {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.7;
-  color: #777;
-  padding: 3.0rem; }
+  color: #777; }
 
 .heading-primary {
   color: #fff;
@@ -1351,8 +1350,6 @@ body {
   position: relative;
   height: 50rem; }
   .card__side {
-    color: #fff;
-    font-size: 2rem;
     height: 50rem;
     margin: 0 2rem;
     transition: all .8s ease;
@@ -1361,7 +1358,8 @@ body {
     left: 0;
     width: 100%;
     backface-visibility: hidden;
-    border-radius: 3px;
+    border-radius: 5px;
+    overflow: hidden;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
     .card__side--front {
       background-color: #fff; }
@@ -1379,18 +1377,31 @@ body {
     transform: rotateY(0); }
   .card__picture {
     background-size: cover;
-    height: 23rem; }
+    height: 23rem;
+    background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
     .card__picture--1 {
-      background-image: url(../img/nat-5.jpg); }
+      background-image: linear-gradient(to right bottom, #a8cff0, #5fb0f4, #228adf), url(../img/nat-5.jpg); }
     .card__picture--2 {
-      background-image: url(../img/nat-5.jpg); }
+      background-image: linear-gradient(to right bottom, #ecc455, #d09d0d, #997309), url(../img/nat-4.jpg); }
     .card__picture--3 {
-      background-image: url(../img/nat-5.jpg); }
+      background-image: linear-gradient(to right bottom, #55c57a, #23990e, #106146), url(../img/nat-3.jpg); }
+  .card__heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    text-align: right; }
+  .card__heading--span--1 {
+    background-image: linear-gradient(to right bottom rgba(168, 207, 240, 0.8), rgba(34, 138, 223, 0.8)); }
 
 .header {
   position: relative;
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(85, 197, 122, 0.8), rgba(16, 97, 70, 0.8));
+  background-image: linear-gradient(to right bottom, rgba(85, 197, 122, 0.8), rgba(16, 97, 70, 0.8)), url(../img/nat-1-large.jpg);
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%); }
@@ -1422,7 +1433,7 @@ body {
 
 .section-features {
   padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, #a8cff0, #5fb0f4, #228adf);
+  background-image: linear-gradient(to right bottom, rgba(168, 207, 240, 0.8), rgba(95, 176, 244, 0.8), rgba(34, 138, 223, 0.8)), url(../img/nat-1-large.jpg);
   background-size: cover;
   transform: skewY(-7deg);
   margin-top: -8rem; }
